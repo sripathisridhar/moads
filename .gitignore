@@ -1,13 +1,6 @@
 # local
-.yml
-*.out
-out/
-wandb/
 .idea
 .vscode
-logs/
-plots/
-*.sh
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -138,30 +131,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-evaluate/ae_metrics.yml
-evaluate/metrics.yml
-train/config.yml
-utils/ae_threshold.yml
-utils/ae_threshold.yml
-utils/ae_threshold.yml
-ae_train.sh
-parallel_ae_train.sh
-parallel_evaluate.sh
-parallel_generate.sh
-parallel_predict.sh
-parallel_separate.sh
-parallel_train_nosep.sh
-parallel_train.sh
-predict.sh
-separate.sh
-train_nosep.sh
-train.sh
-notebooks/tag.ipynb
-notebooks/mlos.ipynb
-parallel_predict.sh
-notebooks/tag-est-analysis.ipynb
-notebooks/separation-error.ipynb
-notebooks/separation_error.ipynb
-notebooks/average_precision.ipynb
-notebooks/evaluate.ipynb
-oss-generate.sh
