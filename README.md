@@ -32,10 +32,12 @@ from the root directory of the repository.
 This repo uses Scaper to generate the soundscapes. Since Scaper sequentially updates its internal state to generate random soundscapes, you must sequentially generate the dataset variants of OSS in order to reproduce the dataset in the [paper](https://dcase.community/documents/workshop2023/proceedings/DCASE2023Workshop_Sridhar_11.pdf) -- i.e. variant 1, 2, ..., 5. In case of space of computational or storage constraints, Variant 1 is preferred for evaluation. 
 
 To synthesize OSS, download the source dataset from [Zenodo](10.5281/zenodo.7241704). Then synthesize OSS using the command
-```python dataset/generate_oss.py --fgpath /path/to/foreground source files \ --bgpath /path/to/foreground source files --outpath /path/to/save output jams files```
-from the root folder of the repository.
+```python dataset/generate_oss.py --fgpath /path/to/foreground source files \ --outpath /path/to/save output jams files```
+from the root folder of the repository. 
 
 By default, this will generate only JAMS annotations files (no audio). These JAMS files contain all information needed to reproduce a soundscape. 
+
+The size of each dataset variant in jams files including all splits is approximately 2.5GB.
 
 3. Synthesize OST from OSS .jams files
 To synthesize 1s OST clips from OSS, use the following command
@@ -44,6 +46,8 @@ where `path/to/oss` points to the base OSS directory containing openness and dat
 
 Since the process of generating OST is fully deterministic given OSS, you can generate any subset of any variant in any order.
 
+The size of each dataset variant in wav files including all splits is approximately 17GB.
+
 # Coming soon
 
 - Instructions to generate ground truth estimates of OST, used to train oracle models.
@@ -51,7 +55,13 @@ Since the process of generating OST is fully deterministic given OSS, you can ge
 
 # Reference
 
-- This dataset is inspired by FSD-MIX-CLIPS
+- This dataset is inspired by [FSD-MIX-CLIPS](https://doi.org/10.5281/zenodo.5574135)
+
+# Citation
+
+Please cite our paper if you find the code or dataset useful for your research.
+
+S. Sridhar, and M. Cartwright. "Multi-label open-set audio classification", Workshop on Detection and Classification of Acoustic Scenes and Events (DCASE), 2023.
 
 # Acknowledgement
 
