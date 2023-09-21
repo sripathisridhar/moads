@@ -1,0 +1,14 @@
+# OSS-clean synthesis 
+clean_snr : 20.0
+add_bg : False
+# OSS synthesis
+train_paths_frac : 0.8
+val_paths_frac : 0.1
+min_examples_per_class : 200
+n_train_soundscapes : 200_000
+n_val_soundscapes : 30_000
+n_test_soundscapes : 30_000
+sr : 48_000
+n_channels : 1
+ref_db : -20
+duration : 10.0

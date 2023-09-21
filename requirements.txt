@@ -1,0 +1,6 @@
+soundfile==0.10.3.post1
+jams==0.3.4
+scaper==1.6.5
+librosa==0.9.1
+pandas
+pyyaml
